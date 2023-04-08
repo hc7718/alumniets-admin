@@ -16,7 +16,7 @@ function VerifyOtp() {
             type="number"
             variant="standard"
             required
-            error
+            // error
           />
         </div>
         <div className="form-border"></div>
