@@ -21,7 +21,7 @@ function VerifyOtp() {
         </div>
         <div className="form-border"></div>
         <Button id="submit-btn" variant="contained">
-          Send OTP
+          Verify Otp
         </Button>
       </div>
     </div>
