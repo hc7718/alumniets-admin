@@ -1,8 +1,12 @@
 import "./VerifyOtp.css";
 import { TextField } from "@mui/material";
 import { Button } from "@mui/material";
-
+import { useNavigate } from "react-router-dom";
 function VerifyOtp() {
+  const navigate = useNavigate();
+  const handleSubmit = () => {
+    navigate("/dashboard");
+  };
   return (
     <div id="card">
       <div id="card-content">
@@ -20,7 +24,7 @@ function VerifyOtp() {
           />
         </div>
         <div className="form-border"></div>
-        <Button id="submit-btn" variant="contained">
+        <Button onClick={handleSubmit} id="submit-btn" variant="contained">
           Verify Otp
         </Button>
       </div>
