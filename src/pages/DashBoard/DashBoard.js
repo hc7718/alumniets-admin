@@ -5,9 +5,9 @@ import "./DashBoard.css";
 import Footer from "../../components/Footer/Footer";
 const DashBoard = () => {
   return (
-    <div>
+    <div className="dash">
       <Header />
-      <img src={nietimg} alt="NIET"></img>
+      <img className="college-image" src={nietimg} alt="NIET"></img>
       <Footer />
     </div>
   );
