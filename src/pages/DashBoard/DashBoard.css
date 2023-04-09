@@ -62,3 +62,11 @@ nav li button:hover{
     background-color:brown;
     color: bisque;
 }
+.college-image{
+    width: 100vw;
+    height: 100vh;
+    
+}
+.dash{
+    overflow-x: hidden
+}

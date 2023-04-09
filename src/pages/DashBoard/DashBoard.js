@@ -5,11 +5,11 @@ import nietLogo from "../../images/nietLogo.png";
 import nietimg from "../../images/Hostel.jpg";
 const DashBoard = () => {
   return (
-    <div>
+    <div className="dash">
       <nav>
         <div className="navbar-image-p">
           <img className="content-items" src={nietLogo} alt="NIET LOGO"></img>
-          <p className="logo"> Alumniets</p>
+          <p className="logo">Alumniets</p>
 
           <ul>
             <li>
@@ -65,7 +65,7 @@ const DashBoard = () => {
           </ul>
         </div>
       </nav>
-      <img src={nietimg} alt="NIET"></img>
+      <img className="college-image" src={nietimg} alt="NIET"></img>
     </div>
   );
 };
