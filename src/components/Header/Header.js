@@ -1,22 +1,49 @@
 import { Button } from "@mui/material";
 import nietLogo from "../../images/nietLogo.png";
 import "./Header.css";
+import { useNavigate } from "react-router-dom";
+
 const Header = () => {
+  const navigate = useNavigate();
+  const handleImg = () => {
+    navigate("/dashboard");
+  };
+  const handleAddPost = () => {
+    navigate("/addpost");
+  };
+  const handleAllPost = () => {
+    navigate("/allpost");
+  };
+  const handleAlumni = () => {
+    navigate("/alumni");
+  };
+  const handleStudent = () => {
+    navigate("/student");
+  };
   return (
     <nav>
       <div className="navbar-image-p">
-        <img className="content-items" src={nietLogo} alt="NIET LOGO"></img>
-        <p className="logo"> Alumniets</p>
+        <img
+          onClick={handleImg}
+          className="content-items"
+          src={nietLogo}
+          alt="NIET LOGO"
+        ></img>
+        <p onClick={handleImg} className="logo">
+          {" "}
+          Alumniets
+        </p>
 
         <ul>
           <li>
             <Button
+              onClick={handleAddPost}
               style={{
                 color: "bisque",
               }}
               variant="text"
             >
-              Text
+              Add Post
             </Button>
           </li>
           <li>
@@ -26,37 +53,40 @@ const Header = () => {
               }}
               variant="text"
             >
-              Text
+              My Post
             </Button>
           </li>
           <li>
             <Button
+              onClick={handleAllPost}
               style={{
                 color: "bisque",
               }}
               variant="text"
             >
-              Text
+              All Post
             </Button>
           </li>
           <li>
             <Button
+              onClick={handleAlumni}
               style={{
                 color: "bisque",
               }}
               variant="text"
             >
-              Text
+              Alumni
             </Button>
           </li>
           <li>
             <Button
+              onClick={handleStudent}
               style={{
                 color: "bisque",
               }}
               variant="text"
             >
-              Text
+              Students
             </Button>
           </li>
         </ul>
