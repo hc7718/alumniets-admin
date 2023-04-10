@@ -1,11 +1,11 @@
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
-const AddPost = () => {
+const Student = () => {
   return (
-    <div className="add-post">
+    <div>
       <Header />
       <Footer />
     </div>
   );
 };
-export default AddPost;
+export default Student;
