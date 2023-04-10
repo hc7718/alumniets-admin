@@ -20,6 +20,9 @@ const Header = () => {
   const handleStudent = () => {
     navigate("/student");
   };
+  const handleMyPost = () => {
+    navigate("/mypost");
+  };
   return (
     <div className="header-div">
       <nav>
@@ -49,6 +52,7 @@ const Header = () => {
             </li>
             <li>
               <Button
+                onClick={handleMyPost}
                 style={{
                   color: "bisque",
                 }}
