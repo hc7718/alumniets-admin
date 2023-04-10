@@ -6,6 +6,7 @@ import AddPost from "./pages/AddPost/AddPost";
 import AllPost from "./pages/AllPost/AllPost";
 import Alumni from "./pages/Alumni/Alumni";
 import Student from "./pages/Student/Student";
+import MyPost from "./pages/MyPost/MyPost";
 const MyRouter = () => {
   return (
     <Router>
@@ -17,6 +18,7 @@ const MyRouter = () => {
         <Route path="/allpost" element={<AllPost />} />
         <Route path="/alumni" element={<Alumni />} />
         <Route path="/student" element={<Student />} />
+        <Route path="/mypost" element={<MyPost />} />
       </Routes>
     </Router>
   );
