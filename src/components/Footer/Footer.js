@@ -1,77 +1,78 @@
 import "./Footer.css";
+import { Button } from "@mui/material";
 const Footer = () => {
   return (
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="footer-col">
+    <footer className="footer">
+      <div className="container">
+        <div className="row">
+          <div className="footer-col">
             <h4>company</h4>
             <ul>
               <li>
-                <a href="#">about us</a>
+                <Button>about us</Button>
               </li>
               <li>
-                <a href="#">our services</a>
+                <Button>our services</Button>
               </li>
               <li>
-                <a href="#">privacy policy</a>
+                <Button>privacy policy</Button>
               </li>
               <li>
-                <a href="#">affiliate program</a>
+                <Button>affiliate program</Button>
               </li>
             </ul>
           </div>
-          <div class="footer-col">
+          <div className="footer-col">
             <h4>get help</h4>
             <ul>
               <li>
-                <a href="#">FAQ</a>
+                <Button>FAQ</Button>
               </li>
               <li>
-                <a href="#">shipping</a>
+                <Button>shipping</Button>
               </li>
               <li>
-                <a href="#">returns</a>
+                <Button>returns</Button>
               </li>
               <li>
-                <a href="#">order status</a>
+                <Button>order status</Button>
               </li>
               <li>
-                <a href="#">payment options</a>
+                <Button>payment options</Button>
               </li>
             </ul>
           </div>
-          <div class="footer-col">
+          <div className="footer-col">
             <h4>online shop</h4>
             <ul>
               <li>
-                <a href="#">watch</a>
+                <Button>watch</Button>
               </li>
               <li>
-                <a href="#">bag</a>
+                <Button>bag</Button>
               </li>
               <li>
-                <a href="#">shoes</a>
+                <Button>shoes</Button>
               </li>
               <li>
-                <a href="#">dress</a>
+                <Button>dress</Button>
               </li>
             </ul>
           </div>
-          <div class="footer-col">
+          <div className="footer-col">
             <h4>follow us</h4>
-            <div class="social-links">
-              <a href="#">
-                <i class="fab fa-facebook-f"></i>
+            <div className="social-links">
+              <a href="/dashboard">
+                <i className="fab fa-facebook-f"></i>
               </a>
-              <a href="#">
-                <i class="fab fa-twitter"></i>
+              <a href="/dashboard">
+                <i className="fab fa-twitter"></i>
               </a>
-              <a href="#">
-                <i class="fab fa-instagram"></i>
+              <a href="/dashboard">
+                <i className="fab fa-instagram"></i>
               </a>
-              <a href="#">
-                <i class="fab fa-linkedin-in"></i>
+              <a href="/dashboard">
+                <i className="fab fa-linkedin-in"></i>
               </a>
             </div>
           </div>
