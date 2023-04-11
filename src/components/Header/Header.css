@@ -5,6 +5,9 @@
 }
 .header-div{
     height: 75px;
+    /* position: fixed; */
+    z-index: 0;
+
 }
 nav{
     width: 100%;
