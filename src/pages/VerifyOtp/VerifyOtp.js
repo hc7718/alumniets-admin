@@ -8,25 +8,28 @@ function VerifyOtp() {
     navigate("/dashboard");
   };
   return (
-    <div id="card">
-      <div id="card-content">
-        <div id="card-title">
-          <h2>ADMIN LOGIN</h2>
+    <div>
+      <div className="card-div"></div>
+      <div id="card">
+        <div id="card-content">
+          <div id="card-title">
+            <h2>ADMIN LOGIN</h2>
+          </div>
+          <div id="email-input-div">
+            <TextField
+              id="email-input"
+              label="OTP"
+              type="number"
+              variant="standard"
+              required
+              // error
+            />
+          </div>
+          <div className="form-border"></div>
+          <Button onClick={handleSubmit} id="submit-btn" variant="contained">
+            Verify Otp
+          </Button>
         </div>
-        <div id="email-input-div">
-          <TextField
-            id="email-input"
-            label="OTP"
-            type="number"
-            variant="standard"
-            required
-            // error
-          />
-        </div>
-        <div className="form-border"></div>
-        <Button onClick={handleSubmit} id="submit-btn" variant="contained">
-          Verify Otp
-        </Button>
       </div>
     </div>
   );
