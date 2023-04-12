@@ -11,7 +11,9 @@ a {
     border-radius: 8px;
     box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
     height: 310px;
-    margin: 6rem auto 8.1rem auto;
+    /* margin: 6rem auto 8.1rem auto; */
+    margin-top: -496px;
+    margin-left: 700px;
     width: 329px;
   }
   #card-content {
@@ -49,3 +51,9 @@ a {
   #email-input-div{
     margin-left: 20px;
   }
+
+  .card-div{
+    background-image: url("../../images/niet.jpg");
+    height: 100vh;
+    /* margin-top: -98px; */
+  };

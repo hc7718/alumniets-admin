@@ -8,25 +8,28 @@ const Login = () => {
     navigate("/verifyotp");
   };
   return (
-    <div id="card">
-      <div id="card-content">
-        <div id="card-title">
-          <h2>ADMIN LOGIN</h2>
+    <div>
+      <div className="card-div"></div>
+      <div id="card">
+        <div id="card-content">
+          <div id="card-title">
+            <h2>ADMIN LOGIN</h2>
+          </div>
+          <div id="email-input-div">
+            <TextField
+              id="email-input"
+              label="Email"
+              type="email"
+              variant="standard"
+              required
+              // error
+            />
+          </div>
+          <div className="form-border"></div>
+          <Button onClick={handleVerifyOTP} id="submit-btn" variant="contained">
+            Send OTP
+          </Button>
         </div>
-        <div id="email-input-div">
-          <TextField
-            id="email-input"
-            label="Email"
-            type="email"
-            variant="standard"
-            required
-            // error
-          />
-        </div>
-        <div className="form-border"></div>
-        <Button onClick={handleVerifyOTP} id="submit-btn" variant="contained">
-          Send OTP
-        </Button>
       </div>
     </div>
   );
